@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leon Shelhamer, Senior Full-Stack Engineer</title>
+<meta name="description" content="Portfolio of Leon Shelhamer: Electron and desktop apps, TypeScript, React and Node, WordPress and WooCommerce plugins, and accessibility to WCAG.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b4f9e'/%3E%3Cpath d='M10 7v18h13v-4H14V7z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to the work</a>
+<header class="wrap">
+  <h1>Leon Shelhamer</h1>
+  <p class="role">Senior full-stack engineer. Electron and desktop, TypeScript, React and Node, and accessibility to WCAG.</p>
+  <p>I'm a self-taught engineer with 15 years of production software. The last four have gone into cross-platform Electron apps and the web platform behind them for a regulated pharma agency network. Everything below is something I built, and the public ones link to the code.</p>
+</header>
+
+<main class="wrap">
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h">Work</h2>
+
+    <article>
+      <h3>Electron panel platform</h3>
+      <p>I replaced the local-server workaround vendors used to run convention panels with a code-signed, notarized Electron app for Apple Silicon, Intel Mac and Windows. Drop a build zip onto it and it relaunches as that panel, and several panels can run at once to mirror a booth's layout.</p>
+      <p>The runtime ships as an internal npm package that a React and webpack environment imports, so one backend serves web staging and the desktop build. I built it on my own time, and the team adopted it as the standard delivery format.</p>
+      <p class="note">Built at work, so there is no public link.</p>
+    </article>
+
+    <article>
+      <h3>Kiosk and LED-wall system for a medical congress</h3>
+      <p>I architected the system end to end: a background-removal pipeline, dye-sublimation printing, WebSocket messaging between devices, email queuing and a moderation dashboard. It ran on a live show floor in 2026.</p>
+      <p class="note">Built at work, so there is no public link.</p>
+    </article>
+
+    <article>
+      <h3>AI Shopping for WooCommerce</h3>
+      <p>A WordPress plugin that opens a WooCommerce store to AI agents over three protocols, ACP, UCP and MCP. An agent can search the catalog, build a cart, check out and track an order without ever rendering a browser page.</p>
+      <ul class="links">
+        <li><a href="https://github.com/twoelevenjay/woocommerce-ai-shopping">AI Shopping for WooCommerce source on GitHub</a></li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>WordPress and WooCommerce plugins</h3>
+      <p>CMB2 Admin Extension lets admins build CMB2 meta boxes from the WordPress admin screen without writing code. Discontinued Products flags a WooCommerce product as discontinued, removes add to cart, keeps the page live for search and suggests alternatives.</p>
+      <ul class="links">
+        <li><a href="https://wordpress.org/plugins/cmb2-admin-extension/">CMB2 Admin Extension on wordpress.org</a></li>
+        <li><a href="https://github.com/twoelevenjay/CMB2-Admin-Extension">CMB2 Admin Extension source on GitHub</a></li>
+        <li><a href="https://wordpress.org/plugins/discontinued-products/">Discontinued Products on wordpress.org</a></li>
+        <li><a href="https://github.com/twoelevenjay/woocommerce-discontinued-products">Discontinued Products source on GitHub</a></li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Orchesterm</h3>
+      <p>An Electron app that launches, tiles and commands dozens of macOS Terminal.app windows from one control panel. A command bar sends to one window, a group or all of them, and a display-aware grid places each window.</p>
+      <ul class="links">
+        <li><a href="https://github.com/twoelevenjay/orchesterm">Orchesterm source on GitHub</a></li>
+      </ul>
+    </article>
+
+    <article>
+      <h3>Fugue</h3>
+      <p>A VS Code extension that adds two chat participants to GitHub Copilot. One turns a rough prompt into a structured one, and the other splits a large task across parallel worker agents.</p>
+      <ul class="links">
+        <li><a href="https://github.com/twoelevenjay/fugue">Fugue source on GitHub</a></li>
+      </ul>
+    </article>
+  </section>
+
+  <section aria-labelledby="a11y-h">
+    <h2 id="a11y-h">Accessibility</h2>
+    <p>I use the semantically correct element every time. A button is a button and a link is a link, never a div standing in for either, because the div needs a pile of extra work to catch up. Since I started working that way, the accessibility reports on my projects have gotten shorter every cycle.</p>
+    <p>I audit regulated pharma staging sites against WCAG 2.x and consult other teams on reflow, focus order, heading hierarchy, ARIA semantics and screen-reader behavior. This page follows the same rule and is checked with axe.</p>
+  </section>
+
+  <section aria-labelledby="co-h">
+    <h2 id="co-h">Background</h2>
+    <p>I'm a senior developer at Studio Rx, part of Omnicom Health. Before that I ran Two Eleven Jay LLC, a two-person partnership that designed, built and hosted production web applications for e-commerce, marketing and enterprise IT clients from October 2011.</p>
+  </section>
+
+  <section aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <p>I'm in Albany today and moving to New York City on January 1, 2027. The move is not contingent on any role.</p>
+    <ul class="links">
+      <li><a href="mailto:leon.shelhamer@gmail.com">leon.shelhamer@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/leonshelhamer">LinkedIn profile</a></li>
+      <li><a href="https://github.com/twoelevenjay">GitHub profile</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
